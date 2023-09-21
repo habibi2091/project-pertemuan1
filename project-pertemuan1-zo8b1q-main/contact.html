@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>WEB PORTOFOLIO</title>
+  <style>
+    *{
+      box-sizing:border-box;
+    }
+    body{
+      font-family: arial;
+    }
+    header{
+      background-color:dimgrey;
+      padding: 30px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+    }
+    nav{
+      float: left;
+      width:30%;
+      height: 340px;
+      background-color: grey;
+      padding: 0px;
+    }
+    nav ul{
+      list-style-type: none;
+      padding:0;
+      margin:0;
+    }
+    nav ul li a{
+      display:block;
+      color:black;
+      padding:8px 16px;
+      text-decoration: none;
+    }
+  nav ul li a.active{
+    background-color:black;
+    color:white;
+
+  }
+  nav ul li a:hover:not(.active){
+    background-color:darkslategrey;
+    color:white;
+  } 
+  article{
+    float: left;
+    width: 70%;
+    padding:20px;
+  }
+  section::after{
+    clear: both;
+    display: table;
+    content: "";
+  }
+  footer{
+    background-color:dimgrey;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  /*
+  responsive layout
+  */
+  @media (max-width: 300px){
+    nav, article{
+      width: 100%;
+      height: auto;
+    }
+  }
+  </style>
+  </head>
+  <body>
+    <header>
+      <h1>DAIZZU WEBSITE</h1>
+    </header>
+    <section>
+      <nav>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+      </nav>
+      <article>
+        <h1>KONTAK</h1>
+        <p>Jika Anda memiliki pertanyaan atau memerlukan bantuan, jangan ragu untuk menghubungi kami. </p>
+        <p><strong>Alamat:</strong> Jl. Mujair 7 Rt 003/007, Bambu Apus, Pamulang, KOTA TANGERANG SELATAN,BANTEN,ID,15415</p>
+        <p><strong>Email:</strong> <a href="mailto:info@contoh.com">diaznurmuhammadassayyid@gmail.com</a></p>
+        <p><strong>Telepon:</strong> 085770715020</p>
+
+      </article>
+    </section>
+       <footer>
+       &copy; copyright 2023
+       </footer>
+  </body>
+</html>
